@@ -1,0 +1,62 @@
+@using _380.Extensions
+@model _380.Models.Doctor
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Details</title>
+</head>
+
+<body>
+
+<h1>Doctor Details</h1>
+
+<p>
+    <strong>Doctor ID:</strong>
+    @Model.DoctorId
+</p>
+
+<p>
+    <strong>Doctor Name:</strong>
+    @Model.DoctorName
+</p>
+
+<p>
+    <strong>Specialization:</strong>
+    @Model.Specialization
+</p>
+
+<p>
+    <strong>Experience:</strong>
+    @Model.Experience years
+</p>
+
+<p>
+    <strong>Consultation Fee:</strong>
+    ₹@Model.ConsultationFee
+</p>
+
+<p>
+    <strong>Service Charge:</strong>
+    ₹100
+</p>
+
+<p>
+    <strong>Total Consultation Charge:</strong>
+    ₹@Model.CalculateTotalCharge()
+</p>
+
+<br />
+
+<a href="/Doctor/Appointment?id=@Model.DoctorId">
+    Book Appointment
+</a>
+
+<br /><br />
+
+<a href="/Doctor/Index">
+    Back to Doctors
+</a>
+
+</body>
+</html>

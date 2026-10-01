@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "EBsXuLroO9I=",
+  "success": true,
+  "projectFilePath": "/Users/janhvipatel/Downloads/380-2/380/380.csproj",
+  "expectedPackageFiles": [
+    "/Users/janhvipatel/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/janhvipatel/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/janhvipatel/.nuget/packages/microsoft.netcore.app.host.osx-x64/7.0.20/microsoft.netcore.app.host.osx-x64.7.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}

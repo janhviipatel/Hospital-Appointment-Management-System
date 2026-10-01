@@ -1,0 +1,84 @@
+@using _380.Extensions
+@model List<_380.Models.Doctor>
+
+@{
+    ViewData["Title"] = "Doctor List";
+}
+
+<div class="container">
+
+    <h1>Hospital Appointment Management System</h1>
+
+    <hr />
+
+    <h2 style="text-align:center;">Available Doctors</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Doctor ID</th>
+                <th>Doctor Name</th>
+                <th>Specialization</th>
+                <th>Experience</th>
+                <th>Consultation Fee</th>
+                <th>Service Charge</th>
+                <th>Total Charge</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var doctor in Model)
+            {
+                <tr>
+                    <td>
+                        @doctor.DoctorId
+                    </td>
+
+                    <td>
+                        @doctor.DoctorName
+                    </td>
+
+                    <td>
+                        @doctor.Specialization
+                    </td>
+
+                    <td>
+                        @doctor.Experience Years
+                    </td>
+
+                    <td>
+                        ₹@doctor.ConsultationFee
+                    </td>
+
+                    <td>
+                        ₹100
+                    </td>
+
+                    <td>
+                        <strong>
+                            ₹@doctor.CalculateTotalCharge()
+                        </strong>
+                    </td>
+
+                    <td>
+                        <a href="/Doctor/Details?id=@doctor.DoctorId">
+                            View Details
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <br />
+
+    <div class="page-links">
+
+        <a href="/Doctor/Posts">
+            View Posts
+        </a>
+
+    </div>
+
+</div>

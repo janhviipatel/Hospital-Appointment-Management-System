@@ -1,0 +1,323 @@
+/* =========================================================
+   HOSPITAL APPOINTMENT MANAGEMENT SYSTEM
+   Main Site CSS
+   ========================================================= */
+
+/* ---------- General Page ---------- */
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+      font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+
+/* ---------- Headings ---------- */
+
+h1 {
+  text-align: center;
+  color: #1f3c88;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+h2 {
+  color: #1f3c88;
+}
+
+h3 {
+  color: #333;
+}
+
+
+/* ---------- Main Container ---------- */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+
+/* ---------- Tables ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Table Header */
+
+table thead th,
+table th {
+  background-color: #1f3c88;
+  color: #ffffff;
+  padding: 14px 12px;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid #1f3c88;
+}
+
+
+/* Table Data */
+
+table td {
+  padding: 13px 12px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+
+/* Alternate Row */
+
+table tbody tr:nth-child(even) {
+  background-color: #f8faff;
+}
+
+
+/* Hover Effect */
+
+table tbody tr:hover {
+  background-color: #eaf1ff;
+  transition: 0.2s;
+}
+
+
+/* ---------- Links ---------- */
+
+a {
+  color: #1f5edb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #123f9c;
+  text-decoration: underline;
+}
+
+
+/* ---------- Buttons ---------- */
+
+button,
+.btn {
+  display: inline-block;
+  background-color: #1f5edb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #123f9c;
+  color: white;
+}
+
+
+/* ---------- Forms ---------- */
+
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Form Labels */
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* Form Inputs */
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+
+/* Input Focus */
+
+input:focus {
+  outline: none;
+  border-color: #1f5edb;
+  box-shadow: 0 0 4px rgba(31, 94, 219, 0.3);
+}
+
+
+/* ---------- Doctor Details ---------- */
+
+.doctor-details {
+  width: 70%;
+  margin: 30px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.doctor-details table {
+  margin: 0;
+}
+
+.doctor-details th {
+  width: 35%;
+}
+
+
+/* ---------- Page Navigation ---------- */
+
+.page-links {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.page-links a {
+  margin: 0 8px;
+}
+
+
+/* ---------- Horizontal Line ---------- */
+
+hr {
+  width: 90%;
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px auto;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+  background-color: #1f3c88;
+  color: white;
+  text-align: center;
+}
+
+
+/* ---------- Responsive Table ---------- */
+
+@media screen and (max-width: 768px) {
+
+  .container {
+      width: 95%;
+  }
+
+  table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+  }
+
+  table th,
+  table td {
+      padding: 10px;
+      font-size: 13px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  form {
+      width: 90%;
+      padding: 20px;
+  }
+
+  .doctor-details {
+      width: 90%;
+  }
+}
+
+
+/* ---------- Card Style ---------- */
+
+.card {
+  background-color: white;
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------- Success Message ---------- */
+
+.success {
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+}
+
+
+/* ---------- Error Message ---------- */
+
+.error {
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
